@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Logged In</title>
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>{{ header }}</h1>
+            <form action='/back' method='post'>
+                <p>Name: {{ full_name }}</p>
+                <p>Email: {{ email }}</p>
+                <input type='submit' value='Back'>
+            </form>
+        </div>
+    </body>
+</html>
